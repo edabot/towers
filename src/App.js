@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import * as firebase from 'firebase';
 import Firebase from './includes/firebase/firebase';
 
 import './App.css';
@@ -9,6 +8,8 @@ class App extends Component {
 
     constructor(props) {
         super(props);
+
+        Firebase.initialise();
 
     }
   render() {
